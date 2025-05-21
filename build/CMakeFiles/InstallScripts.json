@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/cmake_install.cmake",
+		"/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-build/cmake_install.cmake",
+		"/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
