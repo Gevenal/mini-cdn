@@ -5,7 +5,7 @@
 #include <unordered_map> // For std::unordered_map (for O(1) average time lookups)
 #include <optional>      // For std::optional (to return values from 'get' gracefully) C++17
 #include <cstddef>       // For size_t
-#include <stdexcept>     // If you plan to throw exceptions for errors like zero capacity
+#include <stdexcept>
 
 namespace Cache
 {

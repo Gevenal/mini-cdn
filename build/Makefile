@@ -172,6 +172,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named cache
+
+# Build rule for target.
+cache: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cache
+.PHONY : cache
+
+# fast build rule for target.
+cache/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/build
+.PHONY : cache/fast
+
+#=============================================================================
 # Target rules for targets named mini_cdn
 
 # Build rule for target.
@@ -185,17 +198,17 @@ mini_cdn/fast:
 .PHONY : mini_cdn/fast
 
 #=============================================================================
-# Target rules for targets named unit_tests
+# Target rules for targets named test_lru_cache
 
 # Build rule for target.
-unit_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unit_tests
-.PHONY : unit_tests
+test_lru_cache: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_lru_cache
+.PHONY : test_lru_cache
 
 # fast build rule for target.
-unit_tests/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/build
-.PHONY : unit_tests/fast
+test_lru_cache/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_lru_cache.dir/build.make CMakeFiles/test_lru_cache.dir/build
+.PHONY : test_lru_cache/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -249,6 +262,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/LruCache.o: src/LruCache.cpp.o
+.PHONY : src/LruCache.o
+
+# target to build an object file
+src/LruCache.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/src/LruCache.cpp.o
+.PHONY : src/LruCache.cpp.o
+
+src/LruCache.i: src/LruCache.cpp.i
+.PHONY : src/LruCache.i
+
+# target to preprocess a source file
+src/LruCache.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/src/LruCache.cpp.i
+.PHONY : src/LruCache.cpp.i
+
+src/LruCache.s: src/LruCache.cpp.s
+.PHONY : src/LruCache.s
+
+# target to generate assembly for a file
+src/LruCache.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/src/LruCache.cpp.s
+.PHONY : src/LruCache.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -273,29 +310,29 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-tests/sample_test.o: tests/sample_test.cpp.o
-.PHONY : tests/sample_test.o
+tests/test_lru_cache.o: tests/test_lru_cache.cpp.o
+.PHONY : tests/test_lru_cache.o
 
 # target to build an object file
-tests/sample_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/tests/sample_test.cpp.o
-.PHONY : tests/sample_test.cpp.o
+tests/test_lru_cache.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_lru_cache.dir/build.make CMakeFiles/test_lru_cache.dir/tests/test_lru_cache.cpp.o
+.PHONY : tests/test_lru_cache.cpp.o
 
-tests/sample_test.i: tests/sample_test.cpp.i
-.PHONY : tests/sample_test.i
+tests/test_lru_cache.i: tests/test_lru_cache.cpp.i
+.PHONY : tests/test_lru_cache.i
 
 # target to preprocess a source file
-tests/sample_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/tests/sample_test.cpp.i
-.PHONY : tests/sample_test.cpp.i
+tests/test_lru_cache.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_lru_cache.dir/build.make CMakeFiles/test_lru_cache.dir/tests/test_lru_cache.cpp.i
+.PHONY : tests/test_lru_cache.cpp.i
 
-tests/sample_test.s: tests/sample_test.cpp.s
-.PHONY : tests/sample_test.s
+tests/test_lru_cache.s: tests/test_lru_cache.cpp.s
+.PHONY : tests/test_lru_cache.s
 
 # target to generate assembly for a file
-tests/sample_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/tests/sample_test.cpp.s
-.PHONY : tests/sample_test.cpp.s
+tests/test_lru_cache.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_lru_cache.dir/build.make CMakeFiles/test_lru_cache.dir/tests/test_lru_cache.cpp.s
+.PHONY : tests/test_lru_cache.cpp.s
 
 # Help Target
 help:
@@ -310,18 +347,22 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... cache"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... mini_cdn"
-	@echo "... unit_tests"
+	@echo "... test_lru_cache"
+	@echo "... src/LruCache.o"
+	@echo "... src/LruCache.i"
+	@echo "... src/LruCache.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... tests/sample_test.o"
-	@echo "... tests/sample_test.i"
-	@echo "... tests/sample_test.s"
+	@echo "... tests/test_lru_cache.o"
+	@echo "... tests/test_lru_cache.i"
+	@echo "... tests/test_lru_cache.s"
 .PHONY : help
 
 

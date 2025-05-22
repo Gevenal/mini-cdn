@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googletest/include" -isystem "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googletest"
+CXX_INCLUDES = -I"/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/include"
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64 -Wall -Wextra -Wpedantic
 

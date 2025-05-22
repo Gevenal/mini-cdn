@@ -178,8 +178,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/cache.dir/DependInfo.cmake"
   "CMakeFiles/mini_cdn.dir/DependInfo.cmake"
-  "CMakeFiles/unit_tests.dir/DependInfo.cmake"
+  "CMakeFiles/test_lru_cache.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"

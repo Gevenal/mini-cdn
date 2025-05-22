@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/tests/sample_test.cpp" "CMakeFiles/unit_tests.dir/tests/sample_test.cpp.o" "gcc" "CMakeFiles/unit_tests.dir/tests/sample_test.cpp.o.d"
+  "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/tests/test_lru_cache.cpp" "CMakeFiles/test_lru_cache.dir/tests/test_lru_cache.cpp.o" "gcc" "CMakeFiles/test_lru_cache.dir/tests/test_lru_cache.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

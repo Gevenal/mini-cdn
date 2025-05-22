@@ -95,6 +95,7 @@ mini_cdn_EXTERNAL_OBJECTS =
 
 mini_cdn: CMakeFiles/mini_cdn.dir/src/main.cpp.o
 mini_cdn: CMakeFiles/mini_cdn.dir/build.make
+mini_cdn: libcache.a
 mini_cdn: CMakeFiles/mini_cdn.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable mini_cdn"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mini_cdn.dir/link.txt --verbose=$(VERBOSE)

@@ -1,2 +1,2 @@
-all_tests 1 0.233279
+LruCacheTests 1 0.485695
 ---
