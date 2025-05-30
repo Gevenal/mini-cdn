@@ -262,6 +262,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/EchoProxy.o: src/EchoProxy.cpp.o
+.PHONY : src/EchoProxy.o
+
+# target to build an object file
+src/EchoProxy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/EchoProxy.cpp.o
+.PHONY : src/EchoProxy.cpp.o
+
+src/EchoProxy.i: src/EchoProxy.cpp.i
+.PHONY : src/EchoProxy.i
+
+# target to preprocess a source file
+src/EchoProxy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/EchoProxy.cpp.i
+.PHONY : src/EchoProxy.cpp.i
+
+src/EchoProxy.s: src/EchoProxy.cpp.s
+.PHONY : src/EchoProxy.s
+
+# target to generate assembly for a file
+src/EchoProxy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/EchoProxy.cpp.s
+.PHONY : src/EchoProxy.cpp.s
+
 src/LruCache.o: src/LruCache.cpp.o
 .PHONY : src/LruCache.o
 
@@ -285,6 +309,30 @@ src/LruCache.s: src/LruCache.cpp.s
 src/LruCache.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/src/LruCache.cpp.s
 .PHONY : src/LruCache.cpp.s
+
+src/SocketUtils.o: src/SocketUtils.cpp.o
+.PHONY : src/SocketUtils.o
+
+# target to build an object file
+src/SocketUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.o
+.PHONY : src/SocketUtils.cpp.o
+
+src/SocketUtils.i: src/SocketUtils.cpp.i
+.PHONY : src/SocketUtils.i
+
+# target to preprocess a source file
+src/SocketUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.i
+.PHONY : src/SocketUtils.cpp.i
+
+src/SocketUtils.s: src/SocketUtils.cpp.s
+.PHONY : src/SocketUtils.s
+
+# target to generate assembly for a file
+src/SocketUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.s
+.PHONY : src/SocketUtils.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -354,9 +402,15 @@ help:
 	@echo "... gtest_main"
 	@echo "... mini_cdn"
 	@echo "... test_lru_cache"
+	@echo "... src/EchoProxy.o"
+	@echo "... src/EchoProxy.i"
+	@echo "... src/EchoProxy.s"
 	@echo "... src/LruCache.o"
 	@echo "... src/LruCache.i"
 	@echo "... src/LruCache.s"
+	@echo "... src/SocketUtils.o"
+	@echo "... src/SocketUtils.i"
+	@echo "... src/SocketUtils.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

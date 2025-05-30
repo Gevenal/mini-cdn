@@ -22,6 +22,8 @@ target_include_directories(cache PUBLIC
 # ---------------------------------------------------------------------------
 add_executable(mini_cdn
     src/main.cpp
+    src/EchoProxy.cpp         
+    src/SocketUtils.cpp 
 )
 target_link_libraries(mini_cdn PRIVATE cache)
 

@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mini_cdn.dir/src/EchoProxy.cpp.o"
+  "CMakeFiles/mini_cdn.dir/src/EchoProxy.cpp.o.d"
+  "CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.o"
+  "CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.o.d"
   "CMakeFiles/mini_cdn.dir/src/main.cpp.o"
   "CMakeFiles/mini_cdn.dir/src/main.cpp.o.d"
   "mini_cdn"
