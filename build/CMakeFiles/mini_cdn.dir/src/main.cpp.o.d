@@ -823,4 +823,5 @@ CMakeFiles/mini_cdn.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
-  /Users/letmefeel/Documents/project/computer\ networking/Mini-CDN\ Proxy/mini-cdn/src/../include/proxy/EchoProxy.hpp
+  /Users/letmefeel/Documents/project/computer\ networking/Mini-CDN\ Proxy/mini-cdn/src/../include/proxy/HttpProxy.hpp \
+  /Users/letmefeel/Documents/project/computer\ networking/Mini-CDN\ Proxy/mini-cdn/src/../include/proxy/SocketUtils.hpp

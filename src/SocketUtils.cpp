@@ -1,6 +1,7 @@
 #include "../include/proxy/SocketUtils.hpp"
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <arpa/inet.h>
 #include <unistd.h>
 #include <stdexcept>
 #include <cstring>
@@ -8,7 +9,7 @@
 
 namespace net
 {
-    int net::create_listen_socket(uint16_t port)
+    int create_listen_socket(uint16_t port)
     {
         int serverSocketFd = socket(AF_INET, SOCK_STREAM, 0);
         if (serverSocketFd < 0)
@@ -91,5 +92,34 @@ namespace net
                 throw std::runtime_error("send failed");
             total_sent += sent;
         }
+    }
+
+    int connect_to_host(const std::string &ip, int port, std::chrono::seconds timeout)
+    {
+        int sockfd = socket(AF_INET, SOCK_STREAM, 0);
+        if (sockfd < 0)
+        {
+            throw std::runtime_error("Failed to create socket");
+        }
+
+        // Fill sockaddr_in
+        sockaddr_in addr;
+        std::memset(&addr, 0, sizeof(addr));
+        addr.sin_family = AF_INET;
+        addr.sin_port = htons(port);
+        if (inet_pton(AF_INET, ip.c_str(), &addr.sin_addr) <= 0)
+        {
+            ::close(sockfd);
+            throw std::runtime_error("Invalid IP address: " + ip);
+        }
+
+        // Connect
+        if (connect(sockfd, reinterpret_cast<sockaddr *>(&addr), sizeof(addr)) < 0)
+        {
+            ::close(sockfd);
+            throw std::runtime_error("Connection failed to " + ip + ":" + std::to_string(port));
+        }
+
+        return sockfd;
     }
 }

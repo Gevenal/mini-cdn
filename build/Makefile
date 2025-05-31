@@ -211,6 +211,32 @@ test_lru_cache/fast:
 .PHONY : test_lru_cache/fast
 
 #=============================================================================
+# Target rules for targets named test_http_parser
+
+# Build rule for target.
+test_http_parser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_http_parser
+.PHONY : test_http_parser
+
+# fast build rule for target.
+test_http_parser/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/build
+.PHONY : test_http_parser/fast
+
+#=============================================================================
+# Target rules for targets named test_resolver
+
+# Build rule for target.
+test_resolver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_resolver
+.PHONY : test_resolver
+
+# fast build rule for target.
+test_resolver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resolver.dir/build.make CMakeFiles/test_resolver.dir/build
+.PHONY : test_resolver/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -286,6 +312,57 @@ src/EchoProxy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/EchoProxy.cpp.s
 .PHONY : src/EchoProxy.cpp.s
 
+src/HttpParser.o: src/HttpParser.cpp.o
+.PHONY : src/HttpParser.o
+
+# target to build an object file
+src/HttpParser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/src/HttpParser.cpp.o
+.PHONY : src/HttpParser.cpp.o
+
+src/HttpParser.i: src/HttpParser.cpp.i
+.PHONY : src/HttpParser.i
+
+# target to preprocess a source file
+src/HttpParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/src/HttpParser.cpp.i
+.PHONY : src/HttpParser.cpp.i
+
+src/HttpParser.s: src/HttpParser.cpp.s
+.PHONY : src/HttpParser.s
+
+# target to generate assembly for a file
+src/HttpParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/src/HttpParser.cpp.s
+.PHONY : src/HttpParser.cpp.s
+
+src/HttpProxy.o: src/HttpProxy.cpp.o
+.PHONY : src/HttpProxy.o
+
+# target to build an object file
+src/HttpProxy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.o
+.PHONY : src/HttpProxy.cpp.o
+
+src/HttpProxy.i: src/HttpProxy.cpp.i
+.PHONY : src/HttpProxy.i
+
+# target to preprocess a source file
+src/HttpProxy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.i
+.PHONY : src/HttpProxy.cpp.i
+
+src/HttpProxy.s: src/HttpProxy.cpp.s
+.PHONY : src/HttpProxy.s
+
+# target to generate assembly for a file
+src/HttpProxy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.s
+.PHONY : src/HttpProxy.cpp.s
+
 src/LruCache.o: src/LruCache.cpp.o
 .PHONY : src/LruCache.o
 
@@ -309,6 +386,33 @@ src/LruCache.s: src/LruCache.cpp.s
 src/LruCache.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/src/LruCache.cpp.s
 .PHONY : src/LruCache.cpp.s
+
+src/Resolver.o: src/Resolver.cpp.o
+.PHONY : src/Resolver.o
+
+# target to build an object file
+src/Resolver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/Resolver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resolver.dir/build.make CMakeFiles/test_resolver.dir/src/Resolver.cpp.o
+.PHONY : src/Resolver.cpp.o
+
+src/Resolver.i: src/Resolver.cpp.i
+.PHONY : src/Resolver.i
+
+# target to preprocess a source file
+src/Resolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/Resolver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resolver.dir/build.make CMakeFiles/test_resolver.dir/src/Resolver.cpp.i
+.PHONY : src/Resolver.cpp.i
+
+src/Resolver.s: src/Resolver.cpp.s
+.PHONY : src/Resolver.s
+
+# target to generate assembly for a file
+src/Resolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/Resolver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resolver.dir/build.make CMakeFiles/test_resolver.dir/src/Resolver.cpp.s
+.PHONY : src/Resolver.cpp.s
 
 src/SocketUtils.o: src/SocketUtils.cpp.o
 .PHONY : src/SocketUtils.o
@@ -358,6 +462,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+tests/test_http_parser.o: tests/test_http_parser.cpp.o
+.PHONY : tests/test_http_parser.o
+
+# target to build an object file
+tests/test_http_parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cpp.o
+.PHONY : tests/test_http_parser.cpp.o
+
+tests/test_http_parser.i: tests/test_http_parser.cpp.i
+.PHONY : tests/test_http_parser.i
+
+# target to preprocess a source file
+tests/test_http_parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cpp.i
+.PHONY : tests/test_http_parser.cpp.i
+
+tests/test_http_parser.s: tests/test_http_parser.cpp.s
+.PHONY : tests/test_http_parser.s
+
+# target to generate assembly for a file
+tests/test_http_parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cpp.s
+.PHONY : tests/test_http_parser.cpp.s
+
 tests/test_lru_cache.o: tests/test_lru_cache.cpp.o
 .PHONY : tests/test_lru_cache.o
 
@@ -382,6 +510,30 @@ tests/test_lru_cache.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_lru_cache.dir/build.make CMakeFiles/test_lru_cache.dir/tests/test_lru_cache.cpp.s
 .PHONY : tests/test_lru_cache.cpp.s
 
+tests/test_resolver.o: tests/test_resolver.cpp.o
+.PHONY : tests/test_resolver.o
+
+# target to build an object file
+tests/test_resolver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resolver.dir/build.make CMakeFiles/test_resolver.dir/tests/test_resolver.cpp.o
+.PHONY : tests/test_resolver.cpp.o
+
+tests/test_resolver.i: tests/test_resolver.cpp.i
+.PHONY : tests/test_resolver.i
+
+# target to preprocess a source file
+tests/test_resolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resolver.dir/build.make CMakeFiles/test_resolver.dir/tests/test_resolver.cpp.i
+.PHONY : tests/test_resolver.cpp.i
+
+tests/test_resolver.s: tests/test_resolver.cpp.s
+.PHONY : tests/test_resolver.s
+
+# target to generate assembly for a file
+tests/test_resolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resolver.dir/build.make CMakeFiles/test_resolver.dir/tests/test_resolver.cpp.s
+.PHONY : tests/test_resolver.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -401,22 +553,39 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... mini_cdn"
+	@echo "... test_http_parser"
 	@echo "... test_lru_cache"
+	@echo "... test_resolver"
 	@echo "... src/EchoProxy.o"
 	@echo "... src/EchoProxy.i"
 	@echo "... src/EchoProxy.s"
+	@echo "... src/HttpParser.o"
+	@echo "... src/HttpParser.i"
+	@echo "... src/HttpParser.s"
+	@echo "... src/HttpProxy.o"
+	@echo "... src/HttpProxy.i"
+	@echo "... src/HttpProxy.s"
 	@echo "... src/LruCache.o"
 	@echo "... src/LruCache.i"
 	@echo "... src/LruCache.s"
+	@echo "... src/Resolver.o"
+	@echo "... src/Resolver.i"
+	@echo "... src/Resolver.s"
 	@echo "... src/SocketUtils.o"
 	@echo "... src/SocketUtils.i"
 	@echo "... src/SocketUtils.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/test_http_parser.o"
+	@echo "... tests/test_http_parser.i"
+	@echo "... tests/test_http_parser.s"
 	@echo "... tests/test_lru_cache.o"
 	@echo "... tests/test_lru_cache.i"
 	@echo "... tests/test_lru_cache.s"
+	@echo "... tests/test_resolver.o"
+	@echo "... tests/test_resolver.i"
+	@echo "... tests/test_resolver.s"
 .PHONY : help
 
 

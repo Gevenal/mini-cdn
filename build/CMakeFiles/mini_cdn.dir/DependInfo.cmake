@@ -9,6 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/EchoProxy.cpp" "CMakeFiles/mini_cdn.dir/src/EchoProxy.cpp.o" "gcc" "CMakeFiles/mini_cdn.dir/src/EchoProxy.cpp.o.d"
+  "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/HttpParser.cpp" "CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.o" "gcc" "CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.o.d"
+  "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/HttpProxy.cpp" "CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.o" "gcc" "CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.o.d"
+  "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/Resolver.cpp" "CMakeFiles/mini_cdn.dir/src/Resolver.cpp.o" "gcc" "CMakeFiles/mini_cdn.dir/src/Resolver.cpp.o.d"
   "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/SocketUtils.cpp" "CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.o" "gcc" "CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.o.d"
   "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/main.cpp" "CMakeFiles/mini_cdn.dir/src/main.cpp.o" "gcc" "CMakeFiles/mini_cdn.dir/src/main.cpp.o.d"
   )

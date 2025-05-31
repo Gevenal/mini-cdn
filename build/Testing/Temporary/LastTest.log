@@ -1,10 +1,10 @@
-Start testing: May 22 12:36 EDT
+Start testing: May 30 19:21 EDT
 ----------------------------------------------------------
-1/1 Testing: LruCacheTests
-1/1 Test: LruCacheTests
+1/3 Testing: LruCacheTests
+1/3 Test: LruCacheTests
 Command: "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/test_lru_cache"
 Directory: /Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build
-"LruCacheTests" start time: May 22 12:36 EDT
+"LruCacheTests" start time: May 30 19:21 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -23,11 +23,65 @@ Running main() from /Users/letmefeel/Documents/project/computer networking/Mini-
 [==========] 3 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 3 tests.
 <end of output>
-Test time =   0.49 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"LruCacheTests" end time: May 22 12:36 EDT
+"LruCacheTests" end time: May 30 19:21 EDT
 "LruCacheTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 22 12:36 EDT
+2/3 Testing: HttpParserTests
+2/3 Test: HttpParserTests
+Command: "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/test_http_parser"
+Directory: /Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build
+"HttpParserTests" start time: May 30 19:21 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from HttpParserTest
+[ RUN      ] HttpParserTest.RelativeUrlWithHostHeader
+[       OK ] HttpParserTest.RelativeUrlWithHostHeader (0 ms)
+[----------] 1 test from HttpParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"HttpParserTests" end time: May 30 19:21 EDT
+"HttpParserTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: ResolverTests
+3/3 Test: ResolverTests
+Command: "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/test_resolver"
+Directory: /Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build
+"ResolverTests" start time: May 30 19:21 EDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from ResolverTest
+[ RUN      ] ResolverTest.BasicResolution
+[       OK ] ResolverTest.BasicResolution (27 ms)
+[ RUN      ] ResolverTest.NegativeCache
+[       OK ] ResolverTest.NegativeCache (1025 ms)
+[----------] 2 tests from ResolverTest (1052 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (1052 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   1.55 sec
+----------------------------------------------------------
+Test Passed.
+"ResolverTests" end time: May 30 19:21 EDT
+"ResolverTests" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: May 30 19:21 EDT

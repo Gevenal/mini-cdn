@@ -114,11 +114,56 @@ CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/SocketUtils.cpp" -o CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.s
 
+CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.o: CMakeFiles/mini_cdn.dir/flags.make
+CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.o: /Users/letmefeel/Documents/project/computer\ networking/Mini-CDN\ Proxy/mini-cdn/src/HttpProxy.cpp
+CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.o: CMakeFiles/mini_cdn.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.o -MF CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.o.d -o CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.o -c "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/HttpProxy.cpp"
+
+CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/HttpProxy.cpp" > CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.i
+
+CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/HttpProxy.cpp" -o CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.s
+
+CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.o: CMakeFiles/mini_cdn.dir/flags.make
+CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.o: /Users/letmefeel/Documents/project/computer\ networking/Mini-CDN\ Proxy/mini-cdn/src/HttpParser.cpp
+CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.o: CMakeFiles/mini_cdn.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.o -MF CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.o.d -o CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.o -c "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/HttpParser.cpp"
+
+CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/HttpParser.cpp" > CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.i
+
+CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/HttpParser.cpp" -o CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.s
+
+CMakeFiles/mini_cdn.dir/src/Resolver.cpp.o: CMakeFiles/mini_cdn.dir/flags.make
+CMakeFiles/mini_cdn.dir/src/Resolver.cpp.o: /Users/letmefeel/Documents/project/computer\ networking/Mini-CDN\ Proxy/mini-cdn/src/Resolver.cpp
+CMakeFiles/mini_cdn.dir/src/Resolver.cpp.o: CMakeFiles/mini_cdn.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mini_cdn.dir/src/Resolver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mini_cdn.dir/src/Resolver.cpp.o -MF CMakeFiles/mini_cdn.dir/src/Resolver.cpp.o.d -o CMakeFiles/mini_cdn.dir/src/Resolver.cpp.o -c "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/Resolver.cpp"
+
+CMakeFiles/mini_cdn.dir/src/Resolver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mini_cdn.dir/src/Resolver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/Resolver.cpp" > CMakeFiles/mini_cdn.dir/src/Resolver.cpp.i
+
+CMakeFiles/mini_cdn.dir/src/Resolver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mini_cdn.dir/src/Resolver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/src/Resolver.cpp" -o CMakeFiles/mini_cdn.dir/src/Resolver.cpp.s
+
 # Object files for target mini_cdn
 mini_cdn_OBJECTS = \
 "CMakeFiles/mini_cdn.dir/src/main.cpp.o" \
 "CMakeFiles/mini_cdn.dir/src/EchoProxy.cpp.o" \
-"CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.o"
+"CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.o" \
+"CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.o" \
+"CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.o" \
+"CMakeFiles/mini_cdn.dir/src/Resolver.cpp.o"
 
 # External object files for target mini_cdn
 mini_cdn_EXTERNAL_OBJECTS =
@@ -126,10 +171,13 @@ mini_cdn_EXTERNAL_OBJECTS =
 mini_cdn: CMakeFiles/mini_cdn.dir/src/main.cpp.o
 mini_cdn: CMakeFiles/mini_cdn.dir/src/EchoProxy.cpp.o
 mini_cdn: CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.o
+mini_cdn: CMakeFiles/mini_cdn.dir/src/HttpProxy.cpp.o
+mini_cdn: CMakeFiles/mini_cdn.dir/src/HttpParser.cpp.o
+mini_cdn: CMakeFiles/mini_cdn.dir/src/Resolver.cpp.o
 mini_cdn: CMakeFiles/mini_cdn.dir/build.make
 mini_cdn: libcache.a
 mini_cdn: CMakeFiles/mini_cdn.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable mini_cdn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable mini_cdn"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mini_cdn.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_http_parser.dir/tests/test_http_parser.cpp.o CMakeFiles/test_http_parser.dir/src/HttpParser.cpp.o -o test_http_parser  lib/libgtest_main.a lib/libgtest.a

@@ -1,2 +1,4 @@
-LruCacheTests 1 0.485695
+LruCacheTests 2 0.00669556
+HttpParserTests 1 0.00562775
+ResolverTests 1 1.55099
 ---
