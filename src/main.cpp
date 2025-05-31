@@ -4,7 +4,7 @@
 
 int main()
 {
-    proxy::HttpProxy proxy(8080);
+    proxy::HttpProxy proxy(8080, 10);
     int listen_fd = net::create_listen_socket(8080);
 
     while (true)

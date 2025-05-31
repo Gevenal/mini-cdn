@@ -188,4 +188,17 @@ namespace proxy
 
         return request;
     }
+
+    std::string HttpParser::serialize(const HttpRequest &req)
+    {
+        std::ostringstream out;
+        out << req.method << " " << req.path << " " << req.http_version << "\r\n";
+        for (const auto &kv : req.headers)
+        {
+            out << kv.first << ": " << kv.second << "\r\n";
+        }
+        out << "\r\n"; // End of header
+        return out.str();
+    }
+
 }

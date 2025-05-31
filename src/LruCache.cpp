@@ -1,4 +1,5 @@
 #include "../include/proxy/LruCache.hpp"
+#include "../include/proxy/HttpProxy.hpp"
 
 namespace Cache
 {
@@ -92,3 +93,4 @@ namespace Cache
 
 template class Cache::LruCache<std::string, std::string>;
 template class Cache::LruCache<int, int>;
+template class Cache::LruCache<std::string, proxy::HttpProxy::ResponseCacheEntry>;
