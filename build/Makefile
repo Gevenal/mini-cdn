@@ -237,6 +237,19 @@ test_resolver/fast:
 .PHONY : test_resolver/fast
 
 #=============================================================================
+# Target rules for targets named test_thread_pool
+
+# Build rule for target.
+test_thread_pool: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_thread_pool
+.PHONY : test_thread_pool
+
+# fast build rule for target.
+test_thread_pool/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread_pool.dir/build.make CMakeFiles/test_thread_pool.dir/build
+.PHONY : test_thread_pool/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -438,6 +451,30 @@ src/SocketUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/SocketUtils.cpp.s
 .PHONY : src/SocketUtils.cpp.s
 
+src/ThreadPool.o: src/ThreadPool.cpp.o
+.PHONY : src/ThreadPool.o
+
+# target to build an object file
+src/ThreadPool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/src/ThreadPool.cpp.o
+.PHONY : src/ThreadPool.cpp.o
+
+src/ThreadPool.i: src/ThreadPool.cpp.i
+.PHONY : src/ThreadPool.i
+
+# target to preprocess a source file
+src/ThreadPool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/src/ThreadPool.cpp.i
+.PHONY : src/ThreadPool.cpp.i
+
+src/ThreadPool.s: src/ThreadPool.cpp.s
+.PHONY : src/ThreadPool.s
+
+# target to generate assembly for a file
+src/ThreadPool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/src/ThreadPool.cpp.s
+.PHONY : src/ThreadPool.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -534,6 +571,30 @@ tests/test_resolver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resolver.dir/build.make CMakeFiles/test_resolver.dir/tests/test_resolver.cpp.s
 .PHONY : tests/test_resolver.cpp.s
 
+tests/test_thread_pool.o: tests/test_thread_pool.cpp.o
+.PHONY : tests/test_thread_pool.o
+
+# target to build an object file
+tests/test_thread_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread_pool.dir/build.make CMakeFiles/test_thread_pool.dir/tests/test_thread_pool.cpp.o
+.PHONY : tests/test_thread_pool.cpp.o
+
+tests/test_thread_pool.i: tests/test_thread_pool.cpp.i
+.PHONY : tests/test_thread_pool.i
+
+# target to preprocess a source file
+tests/test_thread_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread_pool.dir/build.make CMakeFiles/test_thread_pool.dir/tests/test_thread_pool.cpp.i
+.PHONY : tests/test_thread_pool.cpp.i
+
+tests/test_thread_pool.s: tests/test_thread_pool.cpp.s
+.PHONY : tests/test_thread_pool.s
+
+# target to generate assembly for a file
+tests/test_thread_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread_pool.dir/build.make CMakeFiles/test_thread_pool.dir/tests/test_thread_pool.cpp.s
+.PHONY : tests/test_thread_pool.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -556,6 +617,7 @@ help:
 	@echo "... test_http_parser"
 	@echo "... test_lru_cache"
 	@echo "... test_resolver"
+	@echo "... test_thread_pool"
 	@echo "... src/EchoProxy.o"
 	@echo "... src/EchoProxy.i"
 	@echo "... src/EchoProxy.s"
@@ -574,6 +636,9 @@ help:
 	@echo "... src/SocketUtils.o"
 	@echo "... src/SocketUtils.i"
 	@echo "... src/SocketUtils.s"
+	@echo "... src/ThreadPool.o"
+	@echo "... src/ThreadPool.i"
+	@echo "... src/ThreadPool.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -586,6 +651,9 @@ help:
 	@echo "... tests/test_resolver.o"
 	@echo "... tests/test_resolver.i"
 	@echo "... tests/test_resolver.s"
+	@echo "... tests/test_thread_pool.o"
+	@echo "... tests/test_thread_pool.i"
+	@echo "... tests/test_thread_pool.s"
 .PHONY : help
 
 

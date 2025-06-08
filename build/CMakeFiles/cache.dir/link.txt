@@ -1,2 +1,2 @@
-/usr/bin/ar qc libcache.a CMakeFiles/cache.dir/src/LruCache.cpp.o
+/usr/bin/ar qc libcache.a CMakeFiles/cache.dir/src/LruCache.cpp.o CMakeFiles/cache.dir/src/ThreadPool.cpp.o
 /usr/bin/ranlib libcache.a

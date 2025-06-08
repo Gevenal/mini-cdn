@@ -10,6 +10,7 @@ add_compile_options(-Wall -Wextra -Wpedantic)
 # ----------------------------------------------------------------------------
 add_library(cache
     src/LruCache.cpp
+    src/ThreadPool.cpp
 )
 target_include_directories(cache PUBLIC
     ${PROJECT_SOURCE_DIR}/include
@@ -59,7 +60,7 @@ add_executable(test_http_parser
     src/HttpParser.cpp
 )
 target_include_directories(test_http_parser PRIVATE ${PROJECT_SOURCE_DIR}/include)
-target_link_libraries(test_http_parser PRIVATE gtest_main)
+target_link_libraries(test_http_parser PRIVATE cache gtest_main)
 add_test(NAME HttpParserTests COMMAND test_http_parser)
 
 # ----------------------------------------------------------------------------
@@ -74,3 +75,12 @@ target_include_directories(test_resolver PRIVATE ${PROJECT_SOURCE_DIR}/include)
 target_link_libraries(test_resolver PRIVATE gtest_main)
 add_test(NAME ResolverTests COMMAND test_resolver)
 
+# ----------------------------------------------------------------------------
+# 7. Test: ThreadPool
+# ----------------------------------------------------------------------------
+add_executable(test_thread_pool
+    tests/test_thread_pool.cpp
+)
+target_include_directories(test_thread_pool PRIVATE ${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(test_thread_pool PRIVATE cache gtest_main)
+add_test(NAME ThreadPoolTests COMMAND test_thread_pool)

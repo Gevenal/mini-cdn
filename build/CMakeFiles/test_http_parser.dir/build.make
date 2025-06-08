@@ -111,6 +111,7 @@ test_http_parser_EXTERNAL_OBJECTS =
 test_http_parser: CMakeFiles/test_http_parser.dir/tests/test_http_parser.cpp.o
 test_http_parser: CMakeFiles/test_http_parser.dir/src/HttpParser.cpp.o
 test_http_parser: CMakeFiles/test_http_parser.dir/build.make
+test_http_parser: libcache.a
 test_http_parser: lib/libgtest_main.a
 test_http_parser: lib/libgtest.a
 test_http_parser: CMakeFiles/test_http_parser.dir/link.txt

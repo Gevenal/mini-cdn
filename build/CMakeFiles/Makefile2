@@ -68,6 +68,7 @@ all: CMakeFiles/mini_cdn.dir/all
 all: CMakeFiles/test_lru_cache.dir/all
 all: CMakeFiles/test_http_parser.dir/all
 all: CMakeFiles/test_resolver.dir/all
+all: CMakeFiles/test_thread_pool.dir/all
 all: _deps/googletest-build/all
 .PHONY : all
 
@@ -77,6 +78,7 @@ codegen: CMakeFiles/mini_cdn.dir/codegen
 codegen: CMakeFiles/test_lru_cache.dir/codegen
 codegen: CMakeFiles/test_http_parser.dir/codegen
 codegen: CMakeFiles/test_resolver.dir/codegen
+codegen: CMakeFiles/test_thread_pool.dir/codegen
 codegen: _deps/googletest-build/codegen
 .PHONY : codegen
 
@@ -90,6 +92,7 @@ clean: CMakeFiles/mini_cdn.dir/clean
 clean: CMakeFiles/test_lru_cache.dir/clean
 clean: CMakeFiles/test_http_parser.dir/clean
 clean: CMakeFiles/test_resolver.dir/clean
+clean: CMakeFiles/test_thread_pool.dir/clean
 clean: _deps/googletest-build/clean
 .PHONY : clean
 
@@ -166,12 +169,12 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 CMakeFiles/cache.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=1,2 "Built target cache"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=1,2,3 "Built target cache"
 .PHONY : CMakeFiles/cache.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cache.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cache.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 0
 .PHONY : CMakeFiles/cache.dir/rule
@@ -183,7 +186,7 @@ cache: CMakeFiles/cache.dir/rule
 # codegen rule for target.
 CMakeFiles/cache.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=1,2 "Finished codegen for target cache"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=1,2,3 "Finished codegen for target cache"
 .PHONY : CMakeFiles/cache.dir/codegen
 
 # clean rule for target.
@@ -198,12 +201,12 @@ CMakeFiles/cache.dir/clean:
 CMakeFiles/mini_cdn.dir/all: CMakeFiles/cache.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=11,12,13,14,15,16,17 "Built target mini_cdn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=12,13,14,15,16,17,18 "Built target mini_cdn"
 .PHONY : CMakeFiles/mini_cdn.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mini_cdn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 9
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mini_cdn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 0
 .PHONY : CMakeFiles/mini_cdn.dir/rule
@@ -215,7 +218,7 @@ mini_cdn: CMakeFiles/mini_cdn.dir/rule
 # codegen rule for target.
 CMakeFiles/mini_cdn.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=11,12,13,14,15,16,17 "Finished codegen for target mini_cdn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=12,13,14,15,16,17,18 "Finished codegen for target mini_cdn"
 .PHONY : CMakeFiles/mini_cdn.dir/codegen
 
 # clean rule for target.
@@ -232,12 +235,12 @@ CMakeFiles/test_lru_cache.dir/all: _deps/googletest-build/googletest/CMakeFiles/
 CMakeFiles/test_lru_cache.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_lru_cache.dir/build.make CMakeFiles/test_lru_cache.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_lru_cache.dir/build.make CMakeFiles/test_lru_cache.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=21,22 "Built target test_lru_cache"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=22,23 "Built target test_lru_cache"
 .PHONY : CMakeFiles/test_lru_cache.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_lru_cache.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 8
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_lru_cache.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 0
 .PHONY : CMakeFiles/test_lru_cache.dir/rule
@@ -249,7 +252,7 @@ test_lru_cache: CMakeFiles/test_lru_cache.dir/rule
 # codegen rule for target.
 CMakeFiles/test_lru_cache.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_lru_cache.dir/build.make CMakeFiles/test_lru_cache.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=21,22 "Finished codegen for target test_lru_cache"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=22,23 "Finished codegen for target test_lru_cache"
 .PHONY : CMakeFiles/test_lru_cache.dir/codegen
 
 # clean rule for target.
@@ -261,16 +264,17 @@ CMakeFiles/test_lru_cache.dir/clean:
 # Target rules for target CMakeFiles/test_http_parser.dir
 
 # All Build rule for target.
+CMakeFiles/test_http_parser.dir/all: CMakeFiles/cache.dir/all
 CMakeFiles/test_http_parser.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/test_http_parser.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=18,19,20 "Built target test_http_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=19,20,21 "Built target test_http_parser"
 .PHONY : CMakeFiles/test_http_parser.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_http_parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 7
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_http_parser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 0
 .PHONY : CMakeFiles/test_http_parser.dir/rule
@@ -282,7 +286,7 @@ test_http_parser: CMakeFiles/test_http_parser.dir/rule
 # codegen rule for target.
 CMakeFiles/test_http_parser.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=18,19,20 "Finished codegen for target test_http_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=19,20,21 "Finished codegen for target test_http_parser"
 .PHONY : CMakeFiles/test_http_parser.dir/codegen
 
 # clean rule for target.
@@ -298,7 +302,7 @@ CMakeFiles/test_resolver.dir/all: _deps/googletest-build/googletest/CMakeFiles/g
 CMakeFiles/test_resolver.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resolver.dir/build.make CMakeFiles/test_resolver.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resolver.dir/build.make CMakeFiles/test_resolver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=23,24,25 "Built target test_resolver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=24,25,26 "Built target test_resolver"
 .PHONY : CMakeFiles/test_resolver.dir/all
 
 # Build rule for subdir invocation for target.
@@ -315,7 +319,7 @@ test_resolver: CMakeFiles/test_resolver.dir/rule
 # codegen rule for target.
 CMakeFiles/test_resolver.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_resolver.dir/build.make CMakeFiles/test_resolver.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=23,24,25 "Finished codegen for target test_resolver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=24,25,26 "Finished codegen for target test_resolver"
 .PHONY : CMakeFiles/test_resolver.dir/codegen
 
 # clean rule for target.
@@ -324,13 +328,47 @@ CMakeFiles/test_resolver.dir/clean:
 .PHONY : CMakeFiles/test_resolver.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/test_thread_pool.dir
+
+# All Build rule for target.
+CMakeFiles/test_thread_pool.dir/all: CMakeFiles/cache.dir/all
+CMakeFiles/test_thread_pool.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/test_thread_pool.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread_pool.dir/build.make CMakeFiles/test_thread_pool.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread_pool.dir/build.make CMakeFiles/test_thread_pool.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=27,28 "Built target test_thread_pool"
+.PHONY : CMakeFiles/test_thread_pool.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_thread_pool.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_thread_pool.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" 0
+.PHONY : CMakeFiles/test_thread_pool.dir/rule
+
+# Convenience name for target.
+test_thread_pool: CMakeFiles/test_thread_pool.dir/rule
+.PHONY : test_thread_pool
+
+# codegen rule for target.
+CMakeFiles/test_thread_pool.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread_pool.dir/build.make CMakeFiles/test_thread_pool.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=27,28 "Finished codegen for target test_thread_pool"
+.PHONY : CMakeFiles/test_thread_pool.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_thread_pool.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_thread_pool.dir/build.make CMakeFiles/test_thread_pool.dir/clean
+.PHONY : CMakeFiles/test_thread_pool.dir/clean
+
+#=============================================================================
 # Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
 
 # All Build rule for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=3,4 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=4,5 "Built target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -347,7 +385,7 @@ gmock: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=3,4 "Finished codegen for target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=4,5 "Finished codegen for target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/codegen
 
 # clean rule for target.
@@ -363,7 +401,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=5,6 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=6,7 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -380,7 +418,7 @@ gmock_main: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=5,6 "Finished codegen for target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=6,7 "Finished codegen for target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/codegen
 
 # clean rule for target.
@@ -395,7 +433,7 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=7,8 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=8,9 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -412,7 +450,7 @@ gtest: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=7,8 "Finished codegen for target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=8,9 "Finished codegen for target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/codegen
 
 # clean rule for target.
@@ -427,7 +465,7 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=9,10 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=10,11 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -444,7 +482,7 @@ gtest_main: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 # codegen rule for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=9,10 "Finished codegen for target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles" --progress-num=10,11 "Finished codegen for target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/codegen
 
 # clean rule for target.

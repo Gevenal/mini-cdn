@@ -15,8 +15,9 @@ using namespace proxy;
 using namespace net; // SocketUtils functions
 
 // ---------- ctor ----------
-HttpProxy::HttpProxy(unsigned short port, size_t cache_max_size_mb) : port_(port),
-                                                                      response_cache_(cache_max_size_mb > 0 ? cache_max_size_mb * 5 : 100)
+HttpProxy::HttpProxy(unsigned short port, size_t cache_max_size_mb, size_t thread_cnt) : port_(port),
+                                                                                         response_cache_(cache_max_size_mb > 0 ? cache_max_size_mb * 5 : 100),
+                                                                                         thread_pool_(thread_cnt)
 {
     if (cache_max_size_mb == 0)
     {
@@ -40,15 +41,17 @@ void HttpProxy::run()
             std::cerr << "[HttpProxy] accept_client returned an error or invalid fd." << std::endl;
             continue;
         }
-        try
-        {
-            handle_client(client_fd);
-        }
-        catch (const std::exception &ex)
-        {
-            std::cerr << "[HttpProxy] Error: " << ex.what() << std::endl;
-        }
-        ::close(client_fd);
+        thread_pool_.enqueue([this, client_fd]()
+                             {
+    try {
+         std::cout << "[Thread " << std::this_thread::get_id()
+              << "] Handling client_fd = " << client_fd << std::endl;
+  
+        handle_client(client_fd);
+    } catch (const std::exception &ex) {
+        std::cerr << "[HttpProxy] Error: " << ex.what() << std::endl;
+    }
+    ::close(client_fd); });
     }
 }
 
@@ -72,6 +75,9 @@ static std::string read_request_headers(int fd)
 // ---------- handle one request ----------
 void HttpProxy::handle_client(int client_fd)
 {
+    std::cout << "[Thread " << std::this_thread::get_id()
+              << "] Handling client fd = " << client_fd << std::endl;
+
     std::string req_raw = read_request_headers(client_fd);
     HttpRequest req = HttpParser::parse(req_raw);
 

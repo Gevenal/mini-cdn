@@ -97,6 +97,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test_lru_cache.dir/DependInfo.cmake"
   "CMakeFiles/test_http_parser.dir/DependInfo.cmake"
   "CMakeFiles/test_resolver.dir/DependInfo.cmake"
+  "CMakeFiles/test_thread_pool.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"

@@ -2,6 +2,7 @@
 #define HTTP_PROXY_HPP
 
 #include "LruCache.hpp"
+#include "ThreadPool.hpp"
 #include <string>
 #include <map>    // to store the HTTP headers of the cached response.
 #include <chrono> // For handling time-related information, like when a response was received or when it expires.
@@ -20,7 +21,7 @@ namespace proxy
     class HttpProxy
     {
     public:
-        explicit HttpProxy(unsigned short port, size_t cache_max_size_mb); // 构造函数增加缓存大小参数
+        explicit HttpProxy(unsigned short port, size_t cache_max_size_mb, size_t thread_cnt = 5);
 
         /**
          * @brief Start listening for client connections and handle them.
@@ -70,6 +71,7 @@ namespace proxy
         void send_cached_response(int client_fd, const ResponseCacheEntry &cached);
         unsigned short port_;
         Cache::LruCache<std::string, ResponseCacheEntry> response_cache_;
+        ThreadPool thread_pool_;
     };
 
 } // namespace proxy

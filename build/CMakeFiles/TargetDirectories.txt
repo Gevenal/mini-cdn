@@ -3,6 +3,7 @@
 /Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles/test_lru_cache.dir
 /Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles/test_http_parser.dir
 /Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles/test_resolver.dir
+/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles/test_thread_pool.dir
 /Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles/test.dir
 /Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles/edit_cache.dir
 /Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/CMakeFiles/rebuild_cache.dir
