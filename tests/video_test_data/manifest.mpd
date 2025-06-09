@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MPD type="static" mediaPresentationDuration="PT30S" minBufferTime="PT1.5S" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011">
+  <Period duration="PT30S">
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1">
+      <Representation id="video_240p" bandwidth="300000" width="426" height="240" codecs="avc1.4d401e">
+        <BaseURL>video_240p/</BaseURL>
+        <SegmentTemplate media="chunk-$Number$.m4s" initialization="init.mp4" startNumber="1" duration="10" timescale="1" />
+      </Representation>
+      <Representation id="video_480p" bandwidth="700000" width="854" height="480" codecs="avc1.4d401f">
+        <BaseURL>video_480p/</BaseURL>
+        <SegmentTemplate media="chunk-$Number$.m4s" initialization="init.mp4" startNumber="1" duration="10" timescale="1" />
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>

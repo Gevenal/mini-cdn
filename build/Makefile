@@ -301,6 +301,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/DashEngine.o: src/DashEngine.cpp.o
+.PHONY : src/DashEngine.o
+
+# target to build an object file
+src/DashEngine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/DashEngine.cpp.o
+.PHONY : src/DashEngine.cpp.o
+
+src/DashEngine.i: src/DashEngine.cpp.i
+.PHONY : src/DashEngine.i
+
+# target to preprocess a source file
+src/DashEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/DashEngine.cpp.i
+.PHONY : src/DashEngine.cpp.i
+
+src/DashEngine.s: src/DashEngine.cpp.s
+.PHONY : src/DashEngine.s
+
+# target to generate assembly for a file
+src/DashEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/DashEngine.cpp.s
+.PHONY : src/DashEngine.cpp.s
+
 src/EchoProxy.o: src/EchoProxy.cpp.o
 .PHONY : src/EchoProxy.o
 
@@ -399,6 +423,30 @@ src/LruCache.s: src/LruCache.cpp.s
 src/LruCache.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cache.dir/build.make CMakeFiles/cache.dir/src/LruCache.cpp.s
 .PHONY : src/LruCache.cpp.s
+
+src/MpdParser.o: src/MpdParser.cpp.o
+.PHONY : src/MpdParser.o
+
+# target to build an object file
+src/MpdParser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/MpdParser.cpp.o
+.PHONY : src/MpdParser.cpp.o
+
+src/MpdParser.i: src/MpdParser.cpp.i
+.PHONY : src/MpdParser.i
+
+# target to preprocess a source file
+src/MpdParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/MpdParser.cpp.i
+.PHONY : src/MpdParser.cpp.i
+
+src/MpdParser.s: src/MpdParser.cpp.s
+.PHONY : src/MpdParser.s
+
+# target to generate assembly for a file
+src/MpdParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mini_cdn.dir/build.make CMakeFiles/mini_cdn.dir/src/MpdParser.cpp.s
+.PHONY : src/MpdParser.cpp.s
 
 src/Resolver.o: src/Resolver.cpp.o
 .PHONY : src/Resolver.o
@@ -618,6 +666,9 @@ help:
 	@echo "... test_lru_cache"
 	@echo "... test_resolver"
 	@echo "... test_thread_pool"
+	@echo "... src/DashEngine.o"
+	@echo "... src/DashEngine.i"
+	@echo "... src/DashEngine.s"
 	@echo "... src/EchoProxy.o"
 	@echo "... src/EchoProxy.i"
 	@echo "... src/EchoProxy.s"
@@ -630,6 +681,9 @@ help:
 	@echo "... src/LruCache.o"
 	@echo "... src/LruCache.i"
 	@echo "... src/LruCache.s"
+	@echo "... src/MpdParser.o"
+	@echo "... src/MpdParser.i"
+	@echo "... src/MpdParser.s"
 	@echo "... src/Resolver.o"
 	@echo "... src/Resolver.i"
 	@echo "... src/Resolver.s"

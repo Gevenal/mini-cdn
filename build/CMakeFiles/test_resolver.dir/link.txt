@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_resolver.dir/tests/test_resolver.cpp.o CMakeFiles/test_resolver.dir/src/Resolver.cpp.o -o test_resolver  lib/libgtest_main.a lib/libgtest.a
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_resolver.dir/tests/test_resolver.cpp.o CMakeFiles/test_resolver.dir/src/Resolver.cpp.o -o test_resolver   -L/opt/homebrew/opt/tinyxml2/lib  -Wl,-rpath,/opt/homebrew/opt/tinyxml2/lib lib/libgtest_main.a lib/libgtest.a

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googlemock/include" -isystem "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googlemock" -isystem "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googletest/include" -isystem "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googletest"
+CXX_INCLUDES = -I/opt/homebrew/opt/tinyxml2/include -isystem "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googlemock/include" -isystem "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googlemock" -isystem "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googletest/include" -isystem "/Users/letmefeel/Documents/project/computer networking/Mini-CDN Proxy/mini-cdn/build/_deps/googletest-src/googletest"
 
 CXX_FLAGSarm64 = -std=c++17 -arch arm64  -DGTEST_HAS_PTHREAD=1   -Wall -Wextra -Wpedantic
 

@@ -3,10 +3,13 @@
 
 #include "LruCache.hpp"
 #include "ThreadPool.hpp"
+#include "DashEngine.hpp"
 #include <string>
 #include <map>    // to store the HTTP headers of the cached response.
 #include <chrono> // For handling time-related information, like when a response was received or when it expires.
 #include <vector> // To store the response body, which can be binary data.
+#include <deque>
+#include <mutex>
 
 namespace proxy
 {
@@ -70,6 +73,10 @@ namespace proxy
         // std::vector<char> serialize_cached_response(const CachedHttpResponse& cached_response);
         void send_cached_response(int client_fd, const ResponseCacheEntry &cached);
         unsigned short port_;
+        std::deque<double> recent_bandwidths_;   // bandwidth_kbps
+        const size_t max_bandwidth_samples_ = 5; // sliding window
+        std::mutex bandwidth_mutex_;
+        std::unique_ptr<proxy::DashEngine> dash_engine_;
         Cache::LruCache<std::string, ResponseCacheEntry> response_cache_;
         ThreadPool thread_pool_;
     };

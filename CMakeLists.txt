@@ -5,6 +5,12 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_compile_options(-Wall -Wextra -Wpedantic)
 
+# ---------------------------
+# Find tinyxml2 (Homebrew)
+# ---------------------------
+include_directories(/opt/homebrew/opt/tinyxml2/include)
+link_directories(/opt/homebrew/opt/tinyxml2/lib)
+
 # ----------------------------------------------------------------------------
 # 1. Cache library
 # ----------------------------------------------------------------------------
@@ -26,8 +32,10 @@ add_executable(mini_cdn
     src/HttpProxy.cpp
     src/HttpParser.cpp     
     src/Resolver.cpp 
+    src/MpdParser.cpp
+    src/DashEngine.cpp
 )
-target_link_libraries(mini_cdn PRIVATE cache)
+target_link_libraries(mini_cdn PRIVATE cache tinyxml2)
 
 # ----------------------------------------------------------------------------
 # 3. GoogleTest

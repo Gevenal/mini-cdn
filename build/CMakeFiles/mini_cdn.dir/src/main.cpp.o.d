@@ -905,6 +905,8 @@ CMakeFiles/mini_cdn.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/literals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/condition_variable \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
+  /Users/letmefeel/Documents/project/computer\ networking/Mini-CDN\ Proxy/mini-cdn/src/../include/proxy/DashEngine.hpp \
+  /Users/letmefeel/Documents/project/computer\ networking/Mini-CDN\ Proxy/mini-cdn/src/../include/proxy/MpdParser.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
   /Users/letmefeel/Documents/project/computer\ networking/Mini-CDN\ Proxy/mini-cdn/src/../include/proxy/SocketUtils.hpp
