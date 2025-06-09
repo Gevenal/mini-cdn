@@ -66,10 +66,10 @@ namespace proxy
                 return std::chrono::steady_clock::now() > expires_at;
             }
         };
-        // 辅助函数，用于从原始响应中解析并创建 CachedHttpResponse
+        // Helper function that parses the raw HTTP response and stores it in the cache as a CachedHttpResponse
         void process_and_cache_response(const std::string &resp_raw, const std::string &cache_key, int client_fd);
 
-        // 辅助函数，用于将 CachedHttpResponse 序列化回发送给客户端的格式
+        // Helper function that serializes a CachedHttpResponse back into raw format and sends it to the client
         // std::vector<char> serialize_cached_response(const CachedHttpResponse& cached_response);
         void send_cached_response(int client_fd, const ResponseCacheEntry &cached);
         unsigned short port_;

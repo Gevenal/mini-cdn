@@ -1,4 +1,4 @@
-// 用于解析 .mpd 文件（XML）并提取 Representation 信息
+// Parses the .mpd (XML) file and extracts Representation information
 #pragma once
 
 #include <string>
